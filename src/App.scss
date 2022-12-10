@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  background-color: #c6ccd7;
+  color: rgb(248, 245, 245);
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  place-content: center center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cell {
+  border: 1px solid rgb(129, 127, 127);
+  display: flex;
+  place-content: center center;
+  align-items: center;
+  &.hidden {
+    border: 1px solid #fff;
+    &.dark {
+      background: #9aa0a8;
+    }
+    &.light {
+      background: #b6bac0;
+    }
+  }
+  &.shown {
+    border: 1px solid #fff;
+    &.dark {
+      background: #a9d8b8;
+    }
+    &.light {
+      background: #beffc7;
+    }
+  }
+}
